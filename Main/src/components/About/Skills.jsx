@@ -19,7 +19,7 @@ const skills = [
   {
     category: 'Database',
     items: ['MySQL', 'MongoDB'],
-  }
+  },
   {
     category: 'Soft Skills',
     items: ['Problem Solving', 'Teamwork', 'Communication', 'Adaptability'],
