@@ -1,14 +1,25 @@
 # reactPortfolio
 
-<!-- ## Your Task Need to put in my own words
+React Portfolio
+(Mod 20)
 
-Being a web developer means being part of a community. You’ll need a place not only to share your projects while you're applying for jobs or working as a freelancer but also to share your work with other developers and collaborate on projects.
 
-Your task is to create a portfolio using your new React skills, which will help set you apart from other developers whose portfolios don’t use the latest technologies.
 
-You’ll deploy this application to Netlify. Follow the instructions in the Git Guide or consult the [Docs on Netlify](https://vitejs.dev/guide/static-deploy.html#netlify) to create a build that you can deploy.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/13aac60d-201f-4e11-8d99-c27b37371450/deploy-status)](https://app.netlify.com/sites/wonderfulllife/deploys)
+
+
+## Description
+
+Being an active member of the web development community is essential. You require a platform not only to showcase your projects when seeking job opportunities or freelancing but also to collaborate with fellow developers and share your work effectively.
+
+Your objective is to develop a portfolio utilizing your fresh React skills, distinguishing yourself from developers whose portfolios lack the latest technologies. Deploy this application on Netlify by following the guidelines in the Git Guide or referring to the Netlify documentation for deploying the build successfully.
 
 ## User Story
+
+
+
+
+
 
 ```md
 AS AN employer looking for candidates with experience building single-page applications
@@ -53,7 +64,7 @@ You’ll use `vite` to build your portfolio, which will include the following:
 
 6. Run `npm dev`/`npm run dev` and navigate to the prompted URL to see your app.
 
-### Further customization (Recommended)
+## Further customization (Recommended)
 
 1. Navigate to your `package.json` and modify the `scripts` object so that it looks like this example:
 
