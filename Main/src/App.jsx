@@ -1,12 +1,34 @@
+import { useState } from 'react';
 
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import About from './components/About';
+import Experience from './components/Experience';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 import './App.css';
-import BucketList from './components/BucketList';
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="bucket-app">
-      <BucketList />
-    </div>
+    <main className={`${darkMode ? 'dark' : 'light'}`}>
+      <Navbar
+        darkMode={darkMode}
+        toggleDarkMode={toggleDarkMode}
+      />
+      <Home darkMode={darkMode} />
+      <About />
+      <Experience />
+      <Portfolio />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
 
