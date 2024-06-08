@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import Navbar from './components/Navbar';
+import Sidenav from './components/Sidenav';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
@@ -17,13 +17,12 @@ function App() {
 
   return (
     <main className={`${darkMode ? 'dark' : 'light'}`}>
-      <Navbar
+      <Sidenav
         darkMode={darkMode}
         toggleDarkMode={toggleDarkMode}
       />
       <Home darkMode={darkMode} />
       <About />
-      <Experience />
       <Portfolio />
       <Contact />
       <Footer />
