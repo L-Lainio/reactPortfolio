@@ -1,3 +1,18 @@
+node_modules
+dotenv
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.staging
+.env.staging.local
+.env.production.local
+.env.test.local
+.env.development.local
+.env.local
+
+# See https://help.github.com/ignore-files/ for more about ignoring files.
 # Logs
 logs
 *.log

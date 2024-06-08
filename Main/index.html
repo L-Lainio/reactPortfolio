@@ -11,59 +11,52 @@
 
   <title>Lora Lainio | Full-Stack Web Developer</title>
 
-  <script></script>
-  <link rel="stylesheet" crossorigin href="/">
+  <!-- <link rel="stylesheet" crossorigin href="/"> -->
   <link rel="stylesheet" href="/Main/index.css" />
-  <link rel="stylesheet" href="/Main/tailwind.css" />
-  <link rel="stylesheet" href="/Main/tailwind.config.cjs" />
-  <link rel="stylesheet" href="/Main/tailwind.config.js" />
-  <link rel="stylesheet" href="/Main/tailwind.config.mjs" />
-  <link rel="stylesheet" href="/Main/tailwind.config.ts" />
-  <link rel="stylesheet" href="/Main/tailwind.config.tsx" />
-  <link rel="stylesheet" href="/Main/tailwind.config.jsx" />
-  <link rel="stylesheet" href="/Main/tailwind.config.json" />
-  <link rel="stylesheet" href="/Main/tailwind.config.yaml" />
-</head>
-<body>
-  <div id="app"></div>
 
-  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <!-- Import React and ReactDOM from a CDN -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
+  <!-- Import Babel for JSX transpilation -->
   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
 
-  <script type="text/jsx">
-      const app = document.getElementById("app")
+<body>
+  <div id="root"></div>
 
-      function Header({ title }) {
-        return <h1>{title ? title : "Default title"}</h1>
+  <script type="text/babel">
+    const { useState } = React;
+
+    function Header({ title }) {
+      return <h1>{title ? title : 'Default title'}</h1>;
+    }
+
+    function HomePage() {
+      const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
+
+      const [likes, setLikes] = useState(0);
+
+      function handleClick() {
+        setLikes(likes + 1);
       }
 
-      function HomePage() {
-        const names = ["Ada Lovelace", "Grace Hopper", "Margaret Hamilton"]
+      return (
+        <div>
+          <Header title="Develop. Preview. Ship." />
+          <ul>
+            {names.map((name) => (
+              <li key={name}>{name}</li>
+            ))}
+          </ul>
 
-        const [likes, setLikes] = React.useState(0)
+          <button onClick={handleClick}>Like ({likes})</button>
+        </div>
+      );
+    }
 
-        function handleClick() {
-          setLikes(likes + 1)
-        }
-
-        return (
-          <div>
-            <Header title="Develop. Preview. Ship." />
-            <ul>
-              {names.map((name) => (
-                <li key={name}>{name}</li>
-              ))}
-            </ul>
-
-            <button onClick={handleClick}>Like ({likes})</button>
-          </div>
-        )
-      }
-
-      const root = ReactDOM.createRoot(app);
-      root.render(<HomePage />);
-    </script>
+    ReactDOM.render(<HomePage />, document.getElementById('root'));
+  </script>
 </body>
-<script type="module" src="/Main/tailwind.config.cjs"></script>
+
 </html>
