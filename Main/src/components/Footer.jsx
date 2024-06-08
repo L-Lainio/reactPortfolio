@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
+// import { motion } from 'framer-motion';
 
-import Heart from './Icons/Heart';
+// import Heart from './Icons/Heart';
 import GitHub from './Icons/GitHub';
 import Linkedin from './Icons/Linkedin';
 import Instagram from './Icons/Instagram';
@@ -11,7 +11,7 @@ const Footer = () => {
         <footer className='footer pb-8 text-xs sm:text-sm'>
             <div className='flex flex-col justify-center items-center'>
                 <p className='flex justify-center items-center'>
-                    Made with <Heart /> by &nbsp;
+                    Made with ♥ by Lora Lainio
                     <a
                         href='https://github.com/L-Lainio/L-Lainio.github.io'
                         target='_blank'
@@ -28,7 +28,7 @@ const Footer = () => {
             </div>
 
 
-            {/* DISPLAY SOCIAL MEDIA ICONS ON SIDE OVER 768PX SCRN RES */}
+            DISPLAY SOCIAL MEDIA ICONS ON SIDE OVER 768PX SCRN RES
             <div className='social hidden md:block fixed top-[40%] z-10'>
                 <ul className='list-none flex flex-col'>
                     <motion.li
@@ -112,6 +112,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-// Path: Main/src/components/Icons/Heart.jsx
