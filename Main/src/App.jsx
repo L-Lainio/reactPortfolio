@@ -7,7 +7,17 @@ import viteLogo from '/vite.svg'
 // import Contact from './components/Contact';
 // import Footer from './components/Footer';
 // import React from 'react';
+import React from 'react'
+// import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
 import './App.css'
+import './index.css'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
 
 function App() {
   const [count, setCount] = useState(0)
