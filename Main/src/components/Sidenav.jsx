@@ -1,13 +1,7 @@
-import React from 'react';
+import SideNav from "./components/SideNav";
 
-class Sidenav extends React.Component {
-    render() {
-        return (
-            <nav>
-                {/* Navbar content goes here */}
-            </nav>
-        );
-    }
-}
+const SideNav =  // define SideNav here
+    render()
+
 
 export default SideNav;

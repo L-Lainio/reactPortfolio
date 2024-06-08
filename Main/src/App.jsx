@@ -1,11 +1,11 @@
 import { useState } from 'react';
 
-import Sidenav from './components/Sidenav';
 import Home from './components/Home';
 import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import React from 'react';
 import './App.css';
 
 function App() {
@@ -28,6 +28,14 @@ function App() {
       <Footer />
     </main>
   );
+}
+
+function SideNav() {
+  // component logic here
+
+  // return (
+  //   // JSX here
+  // )
 }
 
 export default App;
